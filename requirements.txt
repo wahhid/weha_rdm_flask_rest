@@ -1,0 +1,10 @@
+Flask==1.1.2
+Werkzeug==1.0.1 
+itsdangerous==1.1.0
+Jinja2==2.11.2
+MarkupSafe==1.1.1
+click==7.1.2 
+python-dotenv==0.13.0
+PyJWT==1.7.1 
+flask-jwt-extended==3.24.1 
+six==1.15.0
