@@ -13,6 +13,10 @@ from .odoohelper import OdooHelper
 
 odoo = OdooHelper(app)
 
+@app.route('/', methods=["GET"])
+def index():
+    return "API Version 1.0"
+
 @app.route('/refresh', methods=['POST'])
 @jwt_refresh_token_required
 def refresh():
