@@ -115,7 +115,7 @@ def get_my_profile(customer_id):
     
 @app.route('/api/v1.0/banners/<int:offset>/<int:limit>/', methods=['GET'])
 @jwt_required
-def get_banners(offset,limit):
+def get_banners(offset=0,limit=10):
     return jsonify(odoo.get_pagination(
                     'rdm.mobile.banner',
                     ['name'],
